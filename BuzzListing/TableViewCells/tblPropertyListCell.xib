@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="tblPropertyListCell" customModule="BuzzListing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="mXq-zb-QWs">
+                        <rect key="frame" x="5" y="5" width="150" height="169"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="XKF-D1-VjD"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFs-Px-vR1">
+                        <rect key="frame" x="290" y="10" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bvU-eL-5MK"/>
+                            <constraint firstAttribute="width" constant="20" id="tGC-iK-pYZ"/>
+                        </constraints>
+                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" backgroundImage="add_favorites"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home for Rent" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-pV-mdC">
+                        <rect key="frame" x="160" y="56" width="139" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="mr1-cN-Ddw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$675/mo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mce-8a-NUS">
+                        <rect key="frame" x="160" y="81" width="155" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="duT-ii-Ueq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 bd, 2 ba, 800 sq ft" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXG-RR-0x8">
+                        <rect key="frame" x="160" y="111" width="139" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Dj2-e9-rDx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8700 california City Blvd, California City, 93505" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wg-1E-YKn">
+                        <rect key="frame" x="160" y="146" width="155" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mXq-zb-QWs" secondAttribute="bottom" constant="5" id="5DW-7C-Pkx"/>
+                    <constraint firstItem="1Wg-1E-YKn" firstAttribute="top" secondItem="HXG-RR-0x8" secondAttribute="bottom" constant="5" id="7XP-eu-qEH"/>
+                    <constraint firstAttribute="bottom" secondItem="1Wg-1E-YKn" secondAttribute="bottom" constant="5" id="8vG-L5-tsi"/>
+                    <constraint firstAttribute="trailing" secondItem="Mce-8a-NUS" secondAttribute="trailing" constant="5" id="Ez8-3l-9zF"/>
+                    <constraint firstItem="Mce-8a-NUS" firstAttribute="top" secondItem="ef5-pV-mdC" secondAttribute="bottom" constant="5" id="FOq-VD-bq2"/>
+                    <constraint firstItem="HXG-RR-0x8" firstAttribute="top" secondItem="Mce-8a-NUS" secondAttribute="bottom" constant="5" id="Mne-md-T2g"/>
+                    <constraint firstItem="HXG-RR-0x8" firstAttribute="leading" secondItem="mXq-zb-QWs" secondAttribute="trailing" constant="5" id="P2E-wR-JVi"/>
+                    <constraint firstItem="Mce-8a-NUS" firstAttribute="leading" secondItem="mXq-zb-QWs" secondAttribute="trailing" constant="5" id="QlK-xF-wjf"/>
+                    <constraint firstAttribute="trailing" secondItem="uFs-Px-vR1" secondAttribute="trailing" constant="10" id="UJd-kj-W2N"/>
+                    <constraint firstItem="ef5-pV-mdC" firstAttribute="leading" secondItem="mXq-zb-QWs" secondAttribute="trailing" constant="5" id="YYB-SO-9ZI"/>
+                    <constraint firstItem="mXq-zb-QWs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="cOV-3J-zXn"/>
+                    <constraint firstItem="ef5-pV-mdC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="45" id="l9Q-hs-hWB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ef5-pV-mdC" secondAttribute="trailing" constant="5" id="lx8-HC-Y8p"/>
+                    <constraint firstItem="uFs-Px-vR1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ogz-Hd-8GV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HXG-RR-0x8" secondAttribute="trailing" constant="5" id="qmT-gZ-hAC"/>
+                    <constraint firstAttribute="trailing" secondItem="1Wg-1E-YKn" secondAttribute="trailing" constant="5" id="rTQ-xe-VhF"/>
+                    <constraint firstItem="1Wg-1E-YKn" firstAttribute="leading" secondItem="mXq-zb-QWs" secondAttribute="trailing" constant="5" id="uOk-th-BE9"/>
+                    <constraint firstItem="mXq-zb-QWs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uag-X3-TxV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnFavorites" destination="uFs-Px-vR1" id="LLJ-9s-DLu"/>
+                <outlet property="imgProperty" destination="mXq-zb-QWs" id="nM7-kT-faT"/>
+                <outlet property="propertyAddress" destination="1Wg-1E-YKn" id="8gf-9E-lue"/>
+                <outlet property="propertyDetails" destination="HXG-RR-0x8" id="LHI-eg-7aA"/>
+                <outlet property="propertyPrice" destination="Mce-8a-NUS" id="iKL-TW-BFr"/>
+                <outlet property="propertyType" destination="ef5-pV-mdC" id="IS4-pf-HGZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_favorites" width="32" height="32"/>
+        <image name="loading" width="203" height="150"/>
+    </resources>
+</document>

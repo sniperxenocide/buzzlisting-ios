@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tblSettingsCell" id="KGk-i7-Jjw" customClass="tblSettingsCell" customModule="BuzzListing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="449.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN1-hH-hKI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="nDq-8c-nwH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yr-mc-Lzf">
+                        <rect key="frame" x="10" y="60" width="300" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="THx-DI-ZpK"/>
+                        </constraints>
+                        <state key="normal" title="Sign In / Sign Up">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log-in to save searches and listings. Access them again from anywhere you log-in" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crD-7d-Wbk">
+                        <rect key="frame" x="10" y="100" width="300" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ddZ-TD-5da"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0b5-hZ-D4x">
+                        <rect key="frame" x="10" y="210" width="300" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="xFK-cg-NGa"/>
+                        </constraints>
+                        <state key="normal" title="Unregister">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="unregister:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NmE-6H-7OO"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About This App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ2-zl-VGd">
+                        <rect key="frame" x="0.0" y="290" width="320" height="40"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="sYf-xc-rXy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVN-U6-WJd">
+                        <rect key="frame" x="0.0" y="330" width="320" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DsW-8F-Rdv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="About BuzzListing 1.0">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unregister from BuzzListing 1.0" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6U-RA-YqI">
+                        <rect key="frame" x="10" y="250" width="300" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0Bn-4Z-F6C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlJ-QA-CBw">
+                        <rect key="frame" x="10" y="140" width="300" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JCU-Ev-7P4"/>
+                        </constraints>
+                        <state key="normal" title="Log Out"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out From Current Account" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrK-b2-StR">
+                        <rect key="frame" x="10" y="180" width="300" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="94T-Uc-YEL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b43-Cg-wnn">
+                        <rect key="frame" x="0.0" y="370" width="320" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6pX-55-4AH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Terms &amp; Conditions">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="b43-Cg-wnn" firstAttribute="top" secondItem="zVN-U6-WJd" secondAttribute="bottom" id="22g-06-tuT"/>
+                    <constraint firstAttribute="trailing" secondItem="UlJ-QA-CBw" secondAttribute="trailing" constant="10" id="481-U7-i2c"/>
+                    <constraint firstAttribute="trailing" secondItem="BQ2-zl-VGd" secondAttribute="trailing" id="4ti-WZ-GBE"/>
+                    <constraint firstItem="crD-7d-Wbk" firstAttribute="top" secondItem="6Yr-mc-Lzf" secondAttribute="bottom" constant="10" id="51i-Cc-BAp"/>
+                    <constraint firstItem="0b5-hZ-D4x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8A9-N0-yck"/>
+                    <constraint firstItem="vN1-hH-hKI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8c6-MV-Y64"/>
+                    <constraint firstItem="UlJ-QA-CBw" firstAttribute="top" secondItem="crD-7d-Wbk" secondAttribute="bottom" constant="10" id="8de-7W-Sil"/>
+                    <constraint firstAttribute="trailing" secondItem="6Yr-mc-Lzf" secondAttribute="trailing" constant="10" id="Bhg-MJ-Nzr"/>
+                    <constraint firstItem="crD-7d-Wbk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ewd-M0-pVi"/>
+                    <constraint firstItem="0b5-hZ-D4x" firstAttribute="top" secondItem="HrK-b2-StR" secondAttribute="bottom" constant="10" id="JGT-bQ-dT1"/>
+                    <constraint firstItem="zVN-U6-WJd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JNJ-mO-HxO"/>
+                    <constraint firstItem="UlJ-QA-CBw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NYS-mn-tKj"/>
+                    <constraint firstAttribute="trailing" secondItem="zVN-U6-WJd" secondAttribute="trailing" id="Pa9-rU-Lr3"/>
+                    <constraint firstItem="I6U-RA-YqI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Pri-Fl-fK2"/>
+                    <constraint firstItem="6Yr-mc-Lzf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Qtn-U6-408"/>
+                    <constraint firstItem="zVN-U6-WJd" firstAttribute="top" secondItem="BQ2-zl-VGd" secondAttribute="bottom" id="Xcz-N9-roz"/>
+                    <constraint firstAttribute="trailing" secondItem="0b5-hZ-D4x" secondAttribute="trailing" constant="10" id="YOv-gO-FXR"/>
+                    <constraint firstItem="BQ2-zl-VGd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Z2t-4F-ipq"/>
+                    <constraint firstAttribute="trailing" secondItem="vN1-hH-hKI" secondAttribute="trailing" id="cPI-jr-CVi"/>
+                    <constraint firstAttribute="trailing" secondItem="HrK-b2-StR" secondAttribute="trailing" constant="10" id="cfj-Oh-9nf"/>
+                    <constraint firstAttribute="trailing" secondItem="crD-7d-Wbk" secondAttribute="trailing" constant="10" id="cwT-4N-lUX"/>
+                    <constraint firstItem="vN1-hH-hKI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eWI-ek-YCm"/>
+                    <constraint firstItem="6Yr-mc-Lzf" firstAttribute="top" secondItem="vN1-hH-hKI" secondAttribute="bottom" constant="20" id="gCZ-6J-AJI"/>
+                    <constraint firstAttribute="trailing" secondItem="I6U-RA-YqI" secondAttribute="trailing" constant="10" id="ggU-Xk-kTN"/>
+                    <constraint firstItem="b43-Cg-wnn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="j1C-VG-T0p"/>
+                    <constraint firstItem="BQ2-zl-VGd" firstAttribute="top" secondItem="I6U-RA-YqI" secondAttribute="bottom" constant="20" id="ljf-pI-Xuq"/>
+                    <constraint firstAttribute="trailing" secondItem="b43-Cg-wnn" secondAttribute="trailing" id="lrQ-CV-bdl"/>
+                    <constraint firstItem="I6U-RA-YqI" firstAttribute="top" secondItem="0b5-hZ-D4x" secondAttribute="bottom" constant="10" id="tSG-1B-8L9"/>
+                    <constraint firstItem="HrK-b2-StR" firstAttribute="top" secondItem="UlJ-QA-CBw" secondAttribute="bottom" constant="10" id="y4U-RD-Dc6"/>
+                    <constraint firstItem="HrK-b2-StR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yH6-l8-PgQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAbout" destination="zVN-U6-WJd" id="40b-md-jv3"/>
+                <outlet property="btnLogout" destination="UlJ-QA-CBw" id="nyy-N0-0fm"/>
+                <outlet property="btnSignInUp" destination="6Yr-mc-Lzf" id="Ynb-Kc-5HU"/>
+                <outlet property="btnTerms" destination="b43-Cg-wnn" id="NcF-M2-qw7"/>
+                <outlet property="btnUnregister" destination="0b5-hZ-D4x" id="xtu-Za-Tum"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
